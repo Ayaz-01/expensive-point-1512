@@ -1,0 +1,100 @@
+*{
+    font-family: "Maison Neue Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    }
+#one{
+border: 0px solid red;
+text-align: center;
+border-top: 2px solid #9B9E9E;
+border-bottom: 2px solid #DCDEDD;
+display: flex;
+}
+#one>div{
+border: 0px solid blue;
+height: 60px;
+margin-left: 30px;
+display: flex;
+align-items: center;
+ color: rgb(26, 25, 25);
+ cursor: pointer;
+}
+a{
+color: #282828;
+fill: #282828;
+text-decoration: none;
+}
+a:hover{
+color: lightseagreen;
+}
+#two{
+border:0px solid red;
+padding: 5px;
+display: flex;
+justify-content: space-around;
+}
+#two>div{
+border: 0px solid blue;
+margin-top: 10px;
+
+}
+#two>div>div:nth-child(1){
+margin-bottom: 20px;
+color: #282828;
+font-size: 15px;
+font-weight: bold;
+}
+#two>div>div{
+margin-top: 10px;
+}
+.footersvg>svg{
+width: 19px;
+margin-left: 35px;
+}
+#three>div:nth-child(1)>svg{
+width: 15px;
+margin-left: 5px;
+}
+#three>div:nth-child(1){
+display: flex;
+align-items: center;
+gap: 15px;
+}
+#three>div:nth-child(2){
+display: flex;
+align-items: center;
+gap: 50px;
+}
+.footersel>select{
+height: 40px;
+padding: 10px;
+border: 0px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+margin-left: 15px;
+
+}
+#three{
+border: 0px solid red;
+margin-top: 30px;
+height: 50px;
+display: flex;
+justify-content: space-around;
+}
+#three>div{
+border: 0px solid blue;
+}
+#four{
+border: 0px solid red;
+text-align: center;
+border-top: 2px solid #DCDEDD;
+display: flex;
+margin-top: 40px;
+}
+#four>div{
+border: 0px solid blue;
+height: 60px;
+margin-left: 30px;
+display: flex;
+align-items: center;
+ color: rgb(26, 25, 25);
+ cursor: pointer;
+}
