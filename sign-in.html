@@ -116,6 +116,7 @@ input+label{
     width: 20%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 #navbar>div{
     border: 0px solid red;
@@ -125,7 +126,11 @@ input+label{
 #navbar>img{
     width: 14%;
 }
-
+.divs>input{
+    border-radius: 15px;
+    padding: 4px;
+    border: 1px solid gray;
+}
     </style>
     <link rel="stylesheet" href="footer.css">
 </head>
@@ -136,7 +141,7 @@ input+label{
       <div>Start a project</div>
         </div>
       
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Kickstarter_logo_2019.svg/2560px-Kickstarter_logo_2019.svg.png">
+      <img onclick="homepage()" style="cursor: pointer;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Kickstarter_logo_2019.svg/2560px-Kickstarter_logo_2019.svg.png">
       <div class="divs">
         <input id="search" type="text"  placeholder="Search" />
       <div onclick="transfer()">Log in</div>
@@ -171,7 +176,7 @@ input+label{
               </form>
         </div>
     </div>
-    <div><p>New to Kickstarter? <a href="sign-up.html" target="_blank" style="color: blue;">Sign up</a></p></div>
+    <div><p>New to Kickstarter? <a href="index.html" target="_blank" style="color: blue;">Sign up</a></p></div>
 </div>
 <div id="one">
     <div><a href="https://www.kickstarter.com/film?ref=global-footer" target="_blank">Arts</a></div>
@@ -264,6 +269,7 @@ function mysignup(event){
     }
   else if (e_mail==localStorage.getItem("emailid") && passcode==localStorage.getItem("password")){
     alert("SIGN IN");
+    window.open("homepage.html","_blank");
    }else {
     alert("Wrong Credential");
    }
@@ -280,5 +286,7 @@ function myFunction() {
 function transfer(){
         window.open("sign-in.html","_blank");
     }
-
+function homepage(){
+    window.open("homepage.html","_blank");
+}
 </script>
