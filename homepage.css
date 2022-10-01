@@ -122,6 +122,7 @@ p{
     margin: auto;
     margin-top: 30px;
     
+    
    }
    #creative{
     width: 80%;
@@ -135,11 +136,15 @@ p{
    #creative>div>div>img{
      width: 100%;
    }
+   #creative>div>div{
+    height: 290px;
+   }
    #five5>h5{
     margin-left: 130px;
    }
   #six6{
     border: 0px solid red;
+    margin-bottom: 40px;
   }
   #creators{
     border: 0px solid black;
@@ -172,4 +177,17 @@ p{
   #creators>div>div>a{
     font-size: 15px;
     font-weight: bold;
+  }
+  #videos{
+   border: 1px solid #DCDEDD;
+   width: 76%;
+   margin: auto;
+   margin-top: 20px;
+   padding: 10px;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 10px;
+  }
+  #videos>div>video{
+    width: 100%;
   }
